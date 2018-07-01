@@ -1,0 +1,12 @@
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+Metrics/LineLength:
+  Exclude:
+    - 'listcordrb.gemspec'

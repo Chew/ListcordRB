@@ -28,7 +28,7 @@ Example for getting server count.
 
 ```ruby
 bot.command(:servercount) do |event|
-  event.respond "I am on #{LC.stats.getservercount} servers!"
+  event.respond "I am on #{LC.stats.servers} servers!"
 end
 ```
 

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'listcordrb'
-  s.version = '0.1.0'
+  s.version = '0.2.0'
   s.date = '2018-07-01'
   s.summary = 'ListCord API for Ruby'
   s.description = 'A Ruby library for the ListCord bot list (https://listcord.com) API.'

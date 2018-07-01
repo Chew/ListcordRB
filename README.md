@@ -10,7 +10,7 @@ I mean, why not.
 
 Like a normal gem, run `gem install listcordrb`!
 
-For gemfiles, just `gem 'listcordrb'`! SImple!
+For Gemfiles, just `gem 'listcordrb'`! Simple!
 
 ## Usage
 
@@ -28,7 +28,7 @@ Example for getting server count.
 
 ```ruby
 bot.command(:servercount) do |event|
-  event.respond "I am on #{ListCordRB.stats.getservercount} servers!"
+  event.respond "I am on #{LC.stats.getservercount} servers!"
 end
 ```
 

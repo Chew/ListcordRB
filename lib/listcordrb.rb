@@ -10,5 +10,16 @@ class ListCordRB
   def initialize(apikey, id)
     @api = apikey
     @id = id
+    makestats
   end
+
+  # Initialize Stats
+  def makestats
+    @stats = Stats.new(@api, @id)
+  end
+
+  attr_reader :stats
 end
+
+# Require files
+require 'listcordrb/stats'

@@ -17,7 +17,7 @@ class ListCordRB::Stats
 
   def servers=(count)
     url = "http://listcord.com/api/bot/#{@id}/guilds"
-    json = '{"guilds":' + count.to_i + '}'
+    json = '{"guilds":' + count.to_s + '}'
     RestClient.post(url, json, :Authorization => @api, :'Content-Type' => :json)
   end
 

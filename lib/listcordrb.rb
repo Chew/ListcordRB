@@ -18,8 +18,16 @@ class ListCordRB
     @stats = Stats.new(@api, @id)
   end
 
+  # Load a bot.
+  # @param id [Integer, String] Integer/String ID of the bot you're requesting.
+  def loadbot(id)
+    @bot = Bot.new(id)
+  end
+
   attr_reader :stats
+  attr_reader :bot
 end
 
 # Require files
 require 'listcordrb/stats'
+require 'listcordrb/bot'

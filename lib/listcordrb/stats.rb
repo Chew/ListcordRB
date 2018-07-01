@@ -8,8 +8,10 @@ class ListCordRB::Stats
   end
 
   # Get the server count, returns an int.
-  def getservercount
+  def servers
     url = "http://listcord.com/api/bot/#{@id}"
     JSON.parse(RestClient.get(url))['servers'].to_i
   end
+
+  alias servercount servers
 end

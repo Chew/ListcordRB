@@ -15,6 +15,7 @@ class ListCordRB::Stats
 
   alias servercount servers
 
+  # Update the bot's server count.
   def servers=(count)
     url = "http://listcord.com/api/bot/#{@id}/guilds"
     json = '{"guilds":' + count.to_s + '}'

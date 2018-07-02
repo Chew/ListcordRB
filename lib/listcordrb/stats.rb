@@ -16,9 +16,12 @@ class ListCordRB::Stats
   alias servercount servers
 
   # Update the bot's server count.
-  def servers=(count)
+  def servers=(count, shard = nil)
     url = "http://listcord.com/api/bot/#{@id}/guilds"
-    json = '{"guilds":' + count.to_s + '}'
+    json = {
+      'guilds' => count.to_s,
+      'shard' => shard.to_s
+    }
     RestClient.post(url, json, :Authorization => @api, :'Content-Type' => :json)
   end
 

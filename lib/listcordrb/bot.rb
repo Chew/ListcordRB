@@ -124,4 +124,12 @@ class ListCordRB::Bot
   def owners
     @data['owners']
   end
+
+  # Is the bot online or not?.
+  # @return [true, false] the bot's online status.
+  def online?
+    @data['online']
+  end
+
+  alias online online?
 end

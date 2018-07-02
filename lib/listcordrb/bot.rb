@@ -132,4 +132,10 @@ class ListCordRB::Bot
   end
 
   alias online online?
+
+  # The amount of times the invite button has been clicked for the bot.
+  # @return [Integer] the amount of times the bot has been invited.
+  def invites
+    @data['invites']
+  end
 end

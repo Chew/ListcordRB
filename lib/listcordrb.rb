@@ -18,6 +18,20 @@ class ListCordRB
     @stats = Stats.new(@api, @id)
   end
 
+  # @return [String] the api key.
+  attr_reader :api
+
+  # @return [Integer] the ID.
+  attr_reader :id
+
+  # Change the api key of the bot.
+  # @param key [String] the new api key.
+  attr_writer :api
+
+  # Change the ID of the bot.
+  # @param id [Integer] the new ID.
+  attr_writer :id
+
   # Load a bot.
   # @param id [Integer, String] Integer/String ID of the bot you're requesting.
   def loadbot(id)

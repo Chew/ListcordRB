@@ -1,7 +1,7 @@
 # Stats and stuff, ya know.
 class ListCordRB::Stats
   # Initialize the stats
-  # Program does this automatically when running DBLRuby.new.
+  # Program does this automatically when running ListCordRB.new.
   def initialize(apikey, id)
     @api = apikey
     @id = id

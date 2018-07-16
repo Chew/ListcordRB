@@ -9,7 +9,7 @@ class ListCordRB::Stats
 
   # Get the server count, returns an int.
   def servers
-    url = "http://listcord.com/api/bot/#{@id}"
+    url = "https://listcord.com/api/bot/#{@id}"
     JSON.parse(RestClient.get(url))['servers'].to_i
   end
 
@@ -17,7 +17,7 @@ class ListCordRB::Stats
 
   # Update the bot's server count.
   def servers=(count, shard = nil)
-    url = "http://listcord.com/api/bot/#{@id}/guilds"
+    url = "https://listcord.com/api/bot/#{@id}/guilds"
     json = {
       'guilds' => count.to_s,
       'shard' => shard.to_s

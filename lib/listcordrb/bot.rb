@@ -105,6 +105,12 @@ class ListCordRB::Bot
   alias guild servers
   alias server servers
 
+  # Get the bot's prefix
+  # @return [Integer] the bot's prefix.
+  def prefix
+    @data['prefix']
+  end
+
   # The amount of upvotes the bot has.
   # @return [Integer] the bot's total votes.
   def votes

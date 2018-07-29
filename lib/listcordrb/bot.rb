@@ -111,8 +111,20 @@ class ListCordRB::Bot
     @data['votes'].to_i
   end
 
+  # The verified status of the bot.
+  # @return [true, false] the bot's verified status.
+  def verified?
+    @data['verified']
+  end
+
   # The certified status of the bot.
   # @return [true, false] the bot's certified status.
+  def certified?
+    @data['certified']
+  end
+
+  # The premium status of the bot.
+  # @return [true, false] the bot's premium status.
   def premium?
     @data['premium']
   end

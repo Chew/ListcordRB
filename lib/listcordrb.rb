@@ -38,10 +38,21 @@ class ListCordRB
     @bot = Bot.new(id)
   end
 
+  # Find a bot.
+  # Initialize the get bots
+  # @param query [String] Name of the bot.
+  # @param sort [String] Type of sort, can be votes, servers, newest, or invites, default votes.
+  # @param limit [Integer] amount of bots to return. Max 10, default 1.
+  # @param page [Integer] page of bots, takes limit and mulitplies by this.
+  def getbots(query, sort = 'votes', limit = 1, page = 1)
+    GetBots.new(query, sort, limit, page)
+  end
+
   attr_reader :stats
   attr_reader :bot
 end
 
 # Require files
-require 'listcordrb/stats'
 require 'listcordrb/bot'
+require 'listcordrb/getbots'
+require 'listcordrb/stats'

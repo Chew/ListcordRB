@@ -1,3 +1,5 @@
+# Listcord has been shut down, no idea why, I think it was because the mods were garbage, whoops. Anyway, this is dead now, thanks for stopping by!
+
 # ListCordRB
 
 A ruby library for the ListCord discord bot list.
